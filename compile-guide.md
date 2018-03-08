@@ -28,6 +28,7 @@ Start with downloading and installing the necessary dependencies:
 * CMake 3.9.5 (Link: https://cmake.org/)
 * Boost with MSVC 14.1 Support (Link: https://studiofreya.com/2017/04/23/building-boost-1-64-with-visual-studio-2017/)
 * Git CLI (Link: https://desktop.github.com/)
+* QT 5.5+ (With MSVC, you can use lower versions aslong as the extensions are correct)
 
 
 Remeber to include the necessary paths for Command Prompt.
@@ -44,4 +45,10 @@ Then, procced to start the cmake proccess to generate the Visual Studio Project.
 
 Now, when you enter the AfriCoin/build, you will see project file for visual studio, open this up and change Debug to Release and start the build.
 
-Once, that is completed, you will need to go to src/Release and you will see the files there africoind, miner, simplewallet, walletd.
+Once, that is completed, you will need to go to src/Release and you will see the files there.
+
+You will need to locate your qt install path and locate windeployqt.exe, then enter this in the folder with binaries.
+`c:/qt/bin/windeploy.exe AfriCoin.exe`
+
+This will grab all the neccesary *.ddls, and other extension to make the software portable.
+
