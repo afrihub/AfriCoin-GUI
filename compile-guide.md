@@ -1,13 +1,6 @@
 # Linux (Tested with ubuntu)
 
 
-git clone https://github.com/afrihub/AfriCoin-GUI.git
-cd AfriCoin-GUI
-git clone https://github.com/afrihub/AfriCoin.git
-mv AfriCoin cryptonote
-mkdir build; cd build
-cmake .. ; make 
-
 
 Start with updating and upgrading the current operating system
 
